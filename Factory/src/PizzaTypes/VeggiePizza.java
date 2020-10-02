@@ -8,4 +8,8 @@ public class VeggiePizza extends Pizza {
     public VeggiePizza(PizzaIngredientFactory ingredientFactory){
         this.ingredientFactory = ingredientFactory;
     }
+
+    public void prepare() {
+
+    }
 }
