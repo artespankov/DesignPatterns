@@ -1,23 +1,19 @@
 package PizzaTypes;
 
-import java.util.ArrayList;
+import Ingredients.Dough;
+
 
 public abstract class Pizza {
 
     String name;
-    String dough;
-    String sauce;
-    ArrayList<String> toppings = new ArrayList<String>();
+    Dough dough;
+//    Sauce sauce;
+//    Veggies veggies[];
+//    Cheese cheese;
+//    Pepperoni pepperoni;
+//    Clams clam;
 
-    public void prepare(){
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings: ");
-        for (String topping : toppings) {
-            System.out.println(" "+ topping);
-        }
-    };
+    abstract void prepare();
 
     public void bake(){
         System.out.println("Bake for 25 minutes at 350 degrees");
@@ -31,7 +27,11 @@ public abstract class Pizza {
         System.out.println("Place pizza in official PizzzzaStore Box");
     };
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public String getName() {
-        return name;
+        return this.name;
     }
 }

@@ -10,6 +10,6 @@ public class CHCheesePizza extends Pizza {
     }
 
     public void cut(){
-        System.out.println("Cutting the pizaa into square slices");
+        System.out.println("Cutting the pizza into square slices");
     }
 }
